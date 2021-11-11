@@ -1,0 +1,48 @@
+#backgroundVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+section {
+      display: flex;
+      flex-direction: column;
+  }
+
+p {
+    font-size: 300px;
+    text-align: center;
+    margin-bottom: 0;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(212, 171, 236),
+    0 0 82px rgb(212, 171, 236),
+    0 0 92px rgb(212, 171, 236),
+    0 0 102px rgb(212, 171, 236),
+    0 0 151px rgb(212, 171, 236);
+  }
+#buttonContainer {
+    align-self: center;
+}
+button {
+    font-size: 60px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(212, 171, 236),
+    0 0 82px rgb(212, 171, 236),
+    0 0 92px rgb(212, 171, 236),
+    0 0 102px rgb(212, 171, 236),
+    0 0 151px rgb(212, 171, 236);
+}
