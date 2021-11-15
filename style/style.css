@@ -33,6 +33,7 @@ p {
 }
 button {
     font-size: 60px;
+    color: black;
     background: none;
     border: none;
     cursor: pointer;
@@ -52,6 +53,10 @@ button {
     text-align: center;
     margin-bottom: 0;
   }
+  button {
+    font-size: 30px;
+    
+}
  
   #backgroundVideo {
     width: 420px;
