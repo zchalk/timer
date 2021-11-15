@@ -2,12 +2,21 @@ const timeCount = document.getElementById('timeCount');
 const timeUp = document.getElementById('timeUp');
 const timeDown = document.getElementById('timeDown');
 const start = document.getElementById('start');
+const stop = document.getElementById('stop');
+var interval;
 
 var startTime = 10;
 let time = startTime * 60;
 
 function startTimer() {
-setInterval(countDown, 1000);
+interval = setInterval(countDown, 1000);
+start.style.display = 'none';
+stop.style.display = 'block';
+}
+function stopTimer() {
+clearInterval(interval);
+stop.style.display = 'none';
+start.style.display = 'block'
 }
 
 function countDown() {
@@ -49,5 +58,6 @@ function decreaseTime() {
     timeCount.innerHTML = minutes + ":" + seconds;
 }
 start.addEventListener('click', startTimer);
+stop.addEventListener('click', stopTimer);
 timeUp.addEventListener('click', increaseTime);
 timeDown.addEventListener('click', decreaseTime);
